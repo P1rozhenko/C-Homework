@@ -34,13 +34,30 @@ void FillArray(int[,] matr)
     }
 
 }
-void LookForElement(int[,] matr);
-{
-Console.WriteLine($"Введите индекс элемента");
+
+void LookForEl(int[,] matr)
+{   Console.WriteLine($"Введите номер строки");
+    int Si = Convert.ToInt32(Console.ReadLine());//search i
+    Console.WriteLine($"Введите номер столбца");
+     int Sj = Convert.ToInt32(Console.ReadLine());//search i
+
+
+    for (int i = 0; i < matr.GetLength(0); i++)
+    {
+        for (int j = 0; j < matr.GetLength(1); j++)
+        {
+            matrix GetValue (int[,] Si, Sj);//попытался воспользваться методом поиска элемента по справке майкрософт
+        }
+       Console.WriteLine(GetValue); 
+    }
 
 }
 
+
+
 int[,] matrix = new int[3, 4];
-PrintArray(matrix);
+//PrintArray(matrix);
 FillArray(matrix);
 PrintArray(matrix);
+LookForEl(matrix);
+
