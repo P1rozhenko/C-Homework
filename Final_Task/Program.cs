@@ -12,7 +12,7 @@ for (int i = 0; i < arr.Length; i++)
 }
 for (int j = 0; j < c; j++)
 {
-    Console.Write(arr2[j]);
+    Console.WriteLine(arr2[j] + "");
 }
 
 
