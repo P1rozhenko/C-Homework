@@ -1,32 +1,20 @@
-﻿
-
-
-// Console.Write("Введите фразу ");
-// int [] arr = Array.ConvertAll(Console.ReadLine().Split(" "), int.Parse);
-// int [] arr2 = 0;
-//     for (int i = 0; i < arr.GetLength(0); i++)
-//     {
-//         if (arr Length < 3)
-//         {
-//             arr += arr2;
-//         }
-        
-//     }
-
-
-Console.Write("Введите фразу ");
-int[] arr = Array.ConvertAll(Console.ReadLine().Split(" "), int.Parse);
-int[] arr2 = {0};
+﻿Console.Write("Введите фразу");
+string[] arr = Console.ReadLine().Split(' ');
+string[] arr2 = new string [arr.Length-1];
+int c = 0;
 for (int i = 0; i < arr.Length; i++)
 {
-    if (i < 3)
+    if (arr[i].Length < 3)
     {
-        arr2 = i;
-    }
+        arr2[c]=arr[i];
+        c++;
+    } 
 }
-    
-//Console.WriteLine("{arr}");
-Console.WriteLine("{arr2");
+for (int j = 0; j < c; j++)
+{
+    Console.Write(arr2[j]);
+}
+
 
 // string phrase = "The quick brown fox jumps over the lazy dog.";
 // string[] words = phrase.Split(' ');
